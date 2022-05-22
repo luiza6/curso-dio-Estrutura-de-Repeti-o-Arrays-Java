@@ -1,0 +1,30 @@
+package Exercicios;
+
+import java.util.Scanner;
+
+/*
+Faça um programa que leia 5 números
+e informe o maior número
+e a média desses números.
+*/
+
+public class MaiorEMedia {
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		int numero;
+		int count = 0;
+		int soma = 0;
+		
+		System.out.println("Informe 5 números: ");
+		
+		do {
+			numero = scan.nextInt();
+			soma+=numero;
+			count++;
+		}while(count < 5);	
+		
+		System.out.println("Soma: " + soma);
+	}
+}
